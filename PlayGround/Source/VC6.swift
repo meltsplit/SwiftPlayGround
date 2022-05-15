@@ -1,15 +1,14 @@
 import UIKit
 import SnapKit
 
-class ViewController2 : UIViewController {
+class ViewController6 : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        
-        title = "VC2"
+        title = "VC6"
         view.backgroundColor = .white
+        
         self.view.addSubview(label)
         label.snp.makeConstraints {
             $0.center.equalToSuperview()
@@ -17,7 +16,7 @@ class ViewController2 : UIViewController {
     }
     
     private let label = UILabel().then {
-        $0.text = "VC2"
+        $0.text = "VC6"
         $0.font = .systemFont(ofSize: 50)
     }
     

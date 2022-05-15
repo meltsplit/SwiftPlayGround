@@ -14,16 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let nvc = NavigationController(rootViewController: ViewController1())
-        
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = nvc
+        window?.rootViewController = TabBarController1()
         window?.makeKeyAndVisible()
         
-        let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = .orange
-        nvc.navigationBar.standardAppearance = appearance
-        nvc.navigationBar.scrollEdgeAppearance = appearance
+        
         
         return true
     }
